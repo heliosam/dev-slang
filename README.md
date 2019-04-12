@@ -24,7 +24,7 @@ As a software developer, when you are working with machines, you don't have to t
 |   `%`    |                           percent sign                           |                porcentaje                 |
 |   `^`    |                              caret                               |            acento circunflejo             |
 |   `&`    |                            ampersand                             |                 ampersand                 |
-|   `*`    |                         asterisk, start                          |                 asterisco                 |
+|   `*`    |                         asterisk, star                           |                 asterisco                 |
 |   `-`    |                           dash, hyphen                           |                   guión                   |
 |   `_`    |                            underscore                            |          barra baja, guión bajo           |
 |   `=`    |                              equals                              |          igual que, signo igual           |
