@@ -16,7 +16,7 @@ As a software developer, when you are working with machines, you don't have to t
 |   `()`   |           parenthesis (opening \| closing parenthesis)           |  paréntesis (abre \| cierra paréntesis)   |
 |   `[]`   |      brackets, square brackets (opening \| closing bracket)      |    corchetes (abre \| cierra corchete)    |
 |   `{}`   | curly braces, braces, curly brackets (opening \| closing braces) |       llaves (abre \| cierra llave)       |
-|   `!`    |                      exlamation mark, bang                       | signo de admiración, signo de exclamación |
+|   `!`    |                      exclamation mark, bang                       | signo de admiración, signo de exclamación |
 |   `?`    |                          question mark                           |         símbolo de interrogación          |
 |   `@`    |                                at                                |                  arroba                   |
 |   `#`    |                               hash                               |                almohadilla                |
