@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import locales from "./locales";
 
+import Table from "./components/Table";
+import LanguageSelector from "./components/LanguageSelector";
+
 const App = () => {
   console.log(locales);
   const [locale, setLocale] = useState("en");
@@ -12,35 +15,15 @@ const App = () => {
           ⌨️
         </span>
       </h1>
-      <div className="language-selector">
-        <label>Language</label>
-        <select onChange={e => setLocale(e.target.value)}>
-          {Object.keys(locales).map(language => (
-            <option>{language}</option>
-          ))}
-        </select>
-      </div>
       <p className="description">
         You work with them everyday while working with your computer, but do you
         really know how to pronounce the symbols you program with?
       </p>
-      <table>
-        <thead>
-          <tr>
-            <td>Symbol</td>
-            <td>How to pronounce it</td>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.keys(locales[locale]).map(key => (
-            <tr>
-              <td>{key}</td>
-              <td>{locales[locale][key].join(", ")}</td>
-            </tr>
-          ))}
-          <tr />
-        </tbody>
-      </table>
+      <LanguageSelector
+        languages={Object.keys(locales)}
+        setLanguage={setLocale}
+      />
+      <Table translations={locales[locale]} />
     </div>
   );
 };

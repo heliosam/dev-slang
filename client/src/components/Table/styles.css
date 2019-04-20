@@ -1,0 +1,21 @@
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td {
+  border: 3px solid rgba(232, 173, 199, 0.4);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 30px;
+}
+
+table thead td {
+  text-align: center;
+  font-weight: bold;
+}
+
+table tbody td:first-child {
+  text-align: center;
+  font-weight: bold;
+}
