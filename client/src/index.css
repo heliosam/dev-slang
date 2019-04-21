@@ -41,3 +41,22 @@ body {
   font-size: 15px;
   margin: 0 0 30px 0;
 }
+
+.pro-tip {
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.key {
+  background: #ffffff;
+  color: #333333;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 4px 8px;
+  margin-left: 4px;
+}

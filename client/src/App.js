@@ -41,6 +41,10 @@ const App = () => {
         You work with them everyday while working with your computer, but do you
         really know how to pronounce the symbols you program with?
       </p>
+      <p className="pro-tip">
+        TIP! Try pressing the key you want to know
+        <span class="key">/</span>
+      </p>
       {currentSymbol && (
         <KeyPreview
           symbol={currentSymbol}
