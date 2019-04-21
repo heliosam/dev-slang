@@ -6,7 +6,7 @@ const LanguageSelector = ({languages, setLanguage}) => (
     <label>Language</label>
     <select onChange={e => setLanguage(e.target.value)}>
       {languages.map(language => (
-        <option>{language}</option>
+        <option value={language.value}>{language.name} {language.flag}</option>
       ))}
     </select>
   </div>

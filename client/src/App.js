@@ -19,7 +19,12 @@ const App = () => {
   const [currentLocale, setLocale] = useState("en");
   const [currentSymbol, setSymbol] = useState(null);
 
-  const translations = locales[currentLocale];
+  const translations = locales[currentLocale].symbols;
+  const languages = Object.keys(locales).map(language => ({
+    value: language,
+    name: locales[language].name,
+    flag: locales[language].flag
+  }));
 
   useEffect(() => {
     window.addEventListener("keydown", e => {
@@ -53,7 +58,7 @@ const App = () => {
         />
       )}
       <LanguageSelector
-        languages={Object.keys(locales)}
+        languages={languages}
         setLanguage={setLocale}
       />
       <Table translations={translations} />
