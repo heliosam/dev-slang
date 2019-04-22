@@ -1,29 +1,68 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import locales from "./locales";
 
 import Table from "./components/Table";
 import LanguageSelector from "./components/LanguageSelector";
+import KeyPreview from "./components/KeyPreview";
+
+const validSymbol = symbol => locales.en.symbols[symbol];
+const keyFromBrackets = {
+  "[": "[]",
+  "]": "[]",
+  "{": "{}",
+  "}": "{}",
+  "(": "()",
+  ")": "()"
+};
 
 const App = () => {
-  console.log(locales);
-  const [locale, setLocale] = useState("en");
+  const [currentLocale, setLocale] = useState("en");
+  const [currentSymbol, setSymbol] = useState(null);
+
+  const translations = locales[currentLocale].symbols;
+  const languages = Object.keys(locales).map(language => ({
+    value: language,
+    name: locales[language].name,
+    flag: locales[language].flag
+  }));
+
+  useEffect(() => {
+    window.addEventListener("keydown", e => {
+      (validSymbol(e.key) && setSymbol(e.key)) ||
+        (keyFromBrackets[e.key] && setSymbol(keyFromBrackets[e.key]));
+    });
+  }, []);
+
   return (
     <div className="container">
       <h1 className="title">
         Dev slang{" "}
-        <span role="img" aria-label="keyboard">
-          ⌨️
+        <span role="img" aria-label="speech-bubble">
+          💬
         </span>
       </h1>
       <p className="description">
         You work with them everyday while working with your computer, but do you
         really know how to pronounce the symbols you program with?
       </p>
+      <p className="pro-tip">
+        TIP! Try pressing the key you want to know
+        <span className="key">/</span>
+        <span className="key">?</span>
+        <span className="key">}</span>
+      </p>
+      {currentSymbol && (
+        <KeyPreview
+          symbol={currentSymbol}
+          description={translations[currentSymbol].join(", ")}
+          onClick={() => setSymbol(null)}
+        />
+      )}
       <LanguageSelector
-        languages={Object.keys(locales)}
+        languages={languages}
         setLanguage={setLocale}
       />
-      <Table translations={locales[locale]} />
+      <Table translations={translations} />
     </div>
   );
 };
