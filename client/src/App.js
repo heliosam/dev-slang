@@ -28,7 +28,6 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("keydown", e => {
-      console.log(e.key);
       (validSymbol(e.key) && setSymbol(e.key)) ||
         (keyFromBrackets[e.key] && setSymbol(keyFromBrackets[e.key]));
     });
@@ -38,8 +37,8 @@ const App = () => {
     <div className="container">
       <h1 className="title">
         Dev slang{" "}
-        <span role="img" aria-label="keyboard">
-          ⌨️
+        <span role="img" aria-label="speech-bubble">
+          💬
         </span>
       </h1>
       <p className="description">
