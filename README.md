@@ -1,39 +1,41 @@
-# What is this repo about?
+# Dev slang 💬
 
-As a software developer, when you are working with machines, you don't have to talk to them (normally). However there are times when you need to talk to a human colleague about the code you just created, it is then when sometimes it becomes difficult or confusing how to pronounce symbols such as `[`, `;`, `~`... This repo will try to collect all these characters and symbols for humans and the proper way to pronounce them in English and Spanish.
+Visit our webpage https://devslang.netlify.com
 
-# Symbols
+# What is all this about?
 
-| Symbol   |                            English 🇬🇧                            |                Spanish 🇪🇸                 |
-| :------: | :--------------------------------------------------------------: | :---------------------------------------: |
-|   `;`    |                            semicolon                             |               punto y coma                |
-|   `:`    |                              colon                               |                dos puntos                 |
-|   `.`    |                           dot, period                            |                   punto                   |
-|   `,`    |                              comma                               |                   coma                    |
-|   `"`    |                           double quote                           |              comillas dobles              |
-|   `'`    |                     single quote, apostrophe                     |         comilla simple, apóstrofe         |
-|   `` ` ``  |                       backtick, backquote                      |       acento abierto, acento grave        |
-|   `()`   |           parenthesis (opening \| closing parenthesis)           |  paréntesis (abre \| cierra paréntesis)   |
-|   `[]`   |      brackets, square brackets (opening \| closing bracket)      |    corchetes (abre \| cierra corchete)    |
-|   `{}`   | curly braces, braces, curly brackets (opening \| closing braces) |       llaves (abre \| cierra llave)       |
-|   `!`    |                      exclamation mark, bang                       | signo de admiración, signo de exclamación |
-|   `?`    |                          question mark                           |         símbolo de interrogación          |
-|   `@`    |                                at                                |                  arroba                   |
-|   `#`    |                               hash                               |                almohadilla                |
-|   `$`    |                           dollar sign                            |                   dólar                   |
-|   `%`    |                           percent sign                           |                porcentaje                 |
-|   `^`    |                              caret                               |            acento circunflejo             |
-|   `&`    |                            ampersand                             |                 ampersand                 |
-|   `*`    |                         asterisk, star                           |                 asterisco                 |
-|   `-`    |                           dash, hyphen                           |                   guión                   |
-|   `_`    |                            underscore                            |          barra baja, guión bajo           |
-|   `=`    |                              equals                              |          igual que, signo igual           |
-|   `+`    |                               plus                               |                 suma, más                 |
-|   `~`    |                              tilde                               |         virgurilla, tilde de la ñ         |
-|   `<`    |                            less than                             |                 menor que                 |
-|   `>`    |                           greater than                           |                 mayor que                 |
-|   `<=`   |                      less than or equal to                       |             menor o igual que             |
-|   `>=`   |                     greater than or equal to                     |             mayor o igual que             |
-|   <code>&#124;</code>    |                     bar, vertical bar, pipe                      |           barra, barra vertical           |
-|   `/`    |                              slash                               |              barra inclinada              |
-|   `\`    |                            backslash                             |              barra invertida              |
+As a software developer, when you are working with machines, you don't have to talk to them (normally). However there are times when you need to talk to a human colleague about the code you just created, it is then when sometimes it becomes difficult or confusing how to pronounce symbols such as `[`, `;`, `~`... This repo will try to collect all these characters and symbols for humans and the proper way to pronounce them different languages.
+
+# Contribute
+
+Do you want to add your own language? It's easy, follow these steps:
+
+1. Create a copy of `/client/src/locales/template.json` and rename it to the language code you want to add .i.e. `ru.json`, `pt.json` ...
+2. Add your translations in that new file. If a symbol has more than one translation add different entries in the array of values. Check other languages such as English for examples.
+```json
+{
+  "symbol": ["translation", "other translation for the same symbol"]
+}
+```
+3. Import the new file in `/client/src/locales/index.js` and add it to the default export adding the `name` of the language in that language, the emoji `flag` if available, and the `symbols` being the file you imported before. Check the other languages for examples.
+
+4. Add yourself to the Contributors section down below
+
+```js
+import en from "./en.json";
+// ... 
+import yourCode from "./yourCode.json";
+
+export default {
+  en: { name: "English", flag: "🇬🇧", symbols: en },
+  // ... 
+  yourCode: { name: "Translation", flag: "🏁", symbols: yourCode }
+};
+```
+
+# Contributors
+Translations brought to you by:
+
+- [Helios Aliaga](https://github.com/heliosam) - Spanish / English
+- [Sarah Seitz](https://github.com/SarahNox) - German
+- [Aaron Ciaghi](https://github.com/aaronsama) - Italian
