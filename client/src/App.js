@@ -47,9 +47,9 @@ const App = () => {
       </p>
       <p className="pro-tip">
         TIP! Try pressing the key you want to know
-        <span class="key">/</span>
-        <span class="key">?</span>
-        <span class="key">}</span>
+        <span className="key">/</span>
+        <span className="key">?</span>
+        <span className="key">}</span>
       </p>
       {currentSymbol && (
         <KeyPreview

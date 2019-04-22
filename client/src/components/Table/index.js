@@ -11,7 +11,7 @@ const Table = ({translations}) => (
     </thead>
     <tbody>
       {Object.keys(translations).map(symbol => (
-        <tr>
+        <tr key={symbol}>
           <td>{symbol}</td>
           <td>{translations[symbol].join(", ")}</td>
         </tr>
