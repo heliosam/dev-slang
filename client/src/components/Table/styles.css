@@ -13,6 +13,7 @@ table td {
 table thead td {
   text-align: center;
   font-weight: bold;
+  font-family: "Baloo Chettan";
 }
 
 table tbody td:first-child {

@@ -10,6 +10,6 @@ export default {
     symbols: en
   },
   es: { name: "Español", flag: "🇪🇸", symbols: es },
-  de: { name: "Deutch", flag: "🇩🇪", symbols: de },
+  de: { name: "Deutsch", flag: "🇩🇪", symbols: de },
   it: { name: "Italiano", flag: "🇮🇹", symbols: it }
 };

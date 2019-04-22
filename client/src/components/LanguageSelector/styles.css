@@ -9,3 +9,7 @@
 .language-selector label {
   margin-right: 5px;
 }
+
+.language-selector select {
+  height: 30px;
+}

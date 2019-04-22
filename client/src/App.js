@@ -5,7 +5,7 @@ import Table from "./components/Table";
 import LanguageSelector from "./components/LanguageSelector";
 import KeyPreview from "./components/KeyPreview";
 
-const validSymbol = symbol => locales.en[symbol];
+const validSymbol = symbol => locales.en.symbols[symbol];
 const keyFromBrackets = {
   "[": "[]",
   "]": "[]",
@@ -49,6 +49,8 @@ const App = () => {
       <p className="pro-tip">
         TIP! Try pressing the key you want to know
         <span class="key">/</span>
+        <span class="key">?</span>
+        <span class="key">}</span>
       </p>
       {currentSymbol && (
         <KeyPreview
