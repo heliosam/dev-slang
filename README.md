@@ -19,8 +19,6 @@ Do you want to add your own language? It's easy, follow these steps:
 ```
 3. Import the new file in `/client/src/locales/index.js` and add it to the default export adding the `name` of the language in that language, the emoji `flag` if available, and the `symbols` being the file you imported before. Check the other languages for examples.
 
-4. Add yourself to the Contributors section down below
-
 ```js
 import en from "./en.json";
 // ... 
@@ -32,6 +30,7 @@ export default {
   yourCode: { name: "Translation", flag: "🏁", symbols: yourCode }
 };
 ```
+4. Add yourself to the Contributors section down below
 
 # Contributors
 Translations brought to you by:
