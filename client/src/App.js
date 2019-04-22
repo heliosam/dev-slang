@@ -30,6 +30,8 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("keydown", e => {
+      if (e.key === "Escape") return setSymbol(null);
+
       (validSymbol(e.key) && setSymbol(e.key)) ||
         (keyFromBrackets[e.key] && setSymbol(keyFromBrackets[e.key]));
     });
@@ -51,7 +53,7 @@ const App = () => {
         really know how to pronounce the symbols you program with?
       </p>
       <p className="pro-tip">
-        TIP! Try pressing the key on your keyboard
+        TIP! Try pressing any symbol key on your keyboard
         <span className="key">/</span>
         <span className="key">?</span>
         <span className="key">}</span>
@@ -75,12 +77,15 @@ const App = () => {
         >
           Helios
         </a>{" "}
-        and <a
+        and{" "}
+        <a
           href="https://github.com/heliosam/dev-slang#contributors"
           target="_blank"
           rel="noopener noreferrer"
           className="link"
-        >cool people</a>
+        >
+          cool people
+        </a>
       </div>
     </div>
   );
