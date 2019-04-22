@@ -1,13 +1,26 @@
 .language-selector {
   font-size: 13px;
-  color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.language-selector label {
+.select-control {
+  margin-bottom: 5px;
+}
+
+.select-control label {
   margin-right: 5px;
 }
 
-.language-selector select {
+.select-control select {
   height: 30px;
+  margin-right: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.language-selector .link {
+  display: inline-block;
 }
