@@ -1,9 +1,7 @@
 .language-selector {
-  position: absolute;
-  top: 20px;
-  right: 40px;
   font-size: 13px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .language-selector label {
