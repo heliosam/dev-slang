@@ -2,6 +2,8 @@
 
 Visit our webpage https://devslang.netlify.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a08fd526-4dde-46f0-beb5-1dcd986bdb32/deploy-status)](https://app.netlify.com/sites/devslang/deploys)
+
 # What is all this about?
 
 As a software developer, when you are working with machines, you don't have to talk to them (normally). However there are times when you need to talk to a human colleague about the code you just created, it is then when sometimes it becomes difficult or confusing how to pronounce symbols such as `[`, `;`, `~`... This repo will try to collect all these characters and symbols for humans and the proper way to pronounce them different languages.
