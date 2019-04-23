@@ -55,6 +55,13 @@ body {
   font-family: "Montserrat";
   margin: 0 0 20px 0;
   text-align: center;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .pro-tip {
+    display: block;
+  }
 }
 
 .key {
