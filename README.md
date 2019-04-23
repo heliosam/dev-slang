@@ -21,7 +21,7 @@ That's it, this will install all the required dependencies and start a developme
 
 Do you want to add your own language? It's easy, open a PR with the following changes:
 
-1. Create a copy of `/client/src/locales/template.json` and rename it to the language code you want to add .i.e. `ru.json`, `pt.json` ...
+1. Create a copy of `/src/locales/template.json` and rename it to the language code you want to add .i.e. `ru.json`, `pt.json` ...
 2. Edit the new file and add the `name` of the language and the emoji `flag` if available. Add your translations for all the symbols. If a symbol has more than one translation add different entries in the array of values. Check other languages such as English for examples.
 
 ```json
@@ -34,7 +34,7 @@ Do you want to add your own language? It's easy, open a PR with the following ch
 }
 ```
 
-3. Import the new file in `/client/src/locales/index.js` and add it to the default export.
+3. Import the new file in `/src/locales/index.js` and add it to the default export.
 
 ```js
 import en from "./en.json";
@@ -42,7 +42,7 @@ import en from "./en.json";
 import language_code from "./language_code.json";
 
 export default {
-  en
+  en,
   // ...
   language_code
 };
