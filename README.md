@@ -1,8 +1,6 @@
 # Dev slang 💬
 
-Visit our webpage https://devslang.netlify.com
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a08fd526-4dde-46f0-beb5-1dcd986bdb32/deploy-status)](https://app.netlify.com/sites/devslang/deploys)
+Visit our webpage https://heliosam.github.io/dev-slang/ to check translations
 
 # What is all this about?
 
