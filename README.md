@@ -1,6 +1,6 @@
 # Dev slang 💬
 
-Visit our webpage https://heliosam.github.io/dev-slang/ to check translations
+Visit https://devslang.netlify.com to check it live
 
 # What is all this about?
 
@@ -54,4 +54,5 @@ Translations brought to you by:
 
 - [Helios Aliaga](https://github.com/heliosam) - Spanish / English
 - [Sarah Seitz](https://github.com/SarahNox) - German
+- [Tobias Schulz-Hess](https://github.com/ToBeHH) - German
 - [Aaron Ciaghi](https://github.com/aaronsama) - Italian
