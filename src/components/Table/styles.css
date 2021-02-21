@@ -20,4 +20,5 @@ table thead td {
 table tbody td:first-child {
   text-align: center;
   font-weight: bold;
+  width: 120px;
 }
