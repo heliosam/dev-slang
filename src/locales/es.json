@@ -19,7 +19,7 @@
     "$": ["dólar", "símbolo del dólar"],
     "%": ["porcentaje"],
     "^": ["acento circunflejo"],
-    "&": ["ampersand"],
+    "&": ["et"],
     "*": ["asterisco"],
     "-": ["guión"],
     "_": ["guión bajo", "barra baja"],
