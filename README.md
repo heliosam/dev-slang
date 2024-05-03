@@ -1,16 +1,14 @@
 # Dev slang 💬
 
-Visit https://devslang.netlify.com to check it live
+Visit https://dev-slang.fenomenal.io to check it live
 
 # What is all this about?
 
 As a software developer, when you are working with computers, you don't have to talk to them (normally). However there are times when you need to talk to a human colleague about the code you just created, it is then when sometimes it becomes difficult or confusing how to pronounce symbols such as `[`, `;`, `~`... This repo will try to collect all these characters and symbols and the proper way to pronounce them different languages by humans.
 
 # Run it locally
-This project was bootstraped using `create-react-app`. In order to run it you need to have a working `node` environment with `yarn` or `npm`.
+This project was bootstraped using `create-react-app`. In order to run it you need to have a working `node` environment.
 ```bash
-yarn && yarn start
-# or
 npm install && npm run start
 ```
 That's it, this will install all the required dependencies and start a development server in port `3000`.
