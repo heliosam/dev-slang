@@ -7,14 +7,14 @@ import Table from "./components/Table";
 import LanguageSelector from "./components/LanguageSelector";
 import KeyPreview from "./components/KeyPreview";
 
-const validSymbol = symbol => locales.en.symbols[symbol];
+const validSymbol = (symbol) => locales.en.symbols[symbol];
 const keyFromBrackets = {
   "[": "[]",
   "]": "[]",
   "{": "{}",
   "}": "{}",
   "(": "()",
-  ")": "()"
+  ")": "()",
 };
 
 const App = () => {
@@ -22,14 +22,14 @@ const App = () => {
   const [currentSymbol, setSymbol] = useState(null);
 
   const translations = locales[currentLocale].symbols;
-  const languages = Object.keys(locales).map(language => ({
+  const languages = Object.keys(locales).map((language) => ({
     value: language,
     name: locales[language].name,
-    flag: locales[language].flag
+    flag: locales[language].flag,
   }));
 
   useEffect(() => {
-    window.addEventListener("keydown", e => {
+    window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") return setSymbol(null);
 
       (validSymbol(e.key) && setSymbol(e.key)) ||
@@ -56,7 +56,7 @@ const App = () => {
         TIP! Try pressing any symbol key on your keyboard
         <span className="key">/</span>
         <span className="key">?</span>
-        <span className="key">}</span>
+        <span className="key">{"}"}</span>
       </p>
       {currentSymbol && (
         <KeyPreview
